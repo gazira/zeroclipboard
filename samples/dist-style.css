@@ -1,0 +1,248 @@
+/*popup组件*/
+.ui-poptip {
+    color: #DB7C22;
+    font-size: 12px;
+    line-height: 1.5;
+    z-index: 101;
+}
+.ui-poptip-shadow {
+    background-color: rgba(229, 169, 107, 0.15);
+    border-radius: 2px;
+    padding: 2px;
+}
+.ui-poptip-container {
+    background-color: #FFFCEF;
+    border: 1px solid #FFBB76;
+    border-radius: 2px;
+    padding: 5px 15px;
+    position: relative;
+}
+.ui-poptip:after, .ui-poptip-shadow:after, .ui-poptip-container:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+a.ui-poptip-close {
+    background: -moz-linear-gradient(center top , #FFF0E1, #FFE7CD) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #FFC891;
+    border-radius: 3px;
+    color: #DD7E00;
+    font-family: tahoma;
+    font-size: 14px;
+    height: 12px;
+    line-height: 10px;
+    overflow: hidden;
+    position: absolute;
+    right: 3px;
+    text-align: center;
+    text-decoration: none;
+    top: 3px;
+    width: 12px;
+}
+a.ui-poptip-close:hover {
+    background: -moz-linear-gradient(center top , #FFE5CA, #FFCC98) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #FFB24C;
+    color: #DD7E00;
+    text-decoration: none;
+}
+.ui-poptip-arrow {
+    position: absolute;
+    z-index: 10;
+}
+.ui-poptip-arrow em, .ui-poptip-arrow span {
+    border-color: rgba(255, 255, 255, 0);
+    border-style: solid;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.ui-poptip-arrow-10 {
+    left: -6px;
+    top: 10px;
+}
+.ui-poptip-arrow-10 em {
+    border-right-color: #FFBB76;
+    border-width: 6px 6px 6px 0;
+    left: -1px;
+    top: 0;
+}
+.ui-poptip-arrow-10 span {
+    border-right-color: #FFFCEF;
+    border-width: 6px 6px 6px 0;
+}
+.ui-poptip-arrow-9 {
+    left: -6px;
+    top: 50%;
+}
+.ui-poptip-arrow-9 em {
+    border-right-color: #FFBB76;
+    border-width: 6px 6px 6px 0;
+    left: -1px;
+    top: -6px;
+}
+.ui-poptip-arrow-9 span {
+    border-right-color: #FFFCEF;
+    border-width: 6px 6px 6px 0;
+    top: -6px;
+}
+.ui-poptip-arrow-2 {
+    right: 0;
+    top: 10px;
+}
+.ui-poptip-arrow-2 em {
+    border-left-color: #FFBB76;
+    border-width: 6px 0 6px 6px;
+    left: 1px;
+    top: 0;
+}
+.ui-poptip-arrow-2 span {
+    border-left-color: #FFFCEF;
+    border-width: 6px 0 6px 6px;
+}
+.ui-poptip-arrow-3 {
+    right: 0;
+    top: 50%;
+}
+.ui-poptip-arrow-3 em {
+    border-left-color: #FFBB76;
+    border-width: 6px 0 6px 6px;
+    left: 1px;
+    top: -6px;
+}
+.ui-poptip-arrow-3 span {
+    border-left-color: #FFFCEF;
+    border-width: 6px 0 6px 6px;
+    top: -6px;
+}
+.ui-poptip-arrow-11 em, .ui-poptip-arrow-12 em, .ui-poptip-arrow-1 em {
+    border-bottom-color: #FFBB76;
+    border-width: 0 6px 6px;
+    left: 0;
+    top: -1px;
+}
+.ui-poptip-arrow-11 span, .ui-poptip-arrow-12 span, .ui-poptip-arrow-1 span {
+    border-bottom-color: #FFFCEF;
+    border-width: 0 6px 6px;
+}
+.ui-poptip-arrow-11 {
+    left: 14px;
+    top: -6px;
+}
+.ui-poptip-arrow-1 {
+    right: 28px;
+    top: -6px;
+}
+.ui-poptip-arrow-12 {
+    left: 50%;
+    top: -6px;
+}
+.ui-poptip-arrow-12 em, .ui-poptip-arrow-12 span {
+    left: -6px;
+}
+.ui-poptip-arrow-5 em, .ui-poptip-arrow-6 em, .ui-poptip-arrow-7 em {
+    border-top-color: #FFBB76;
+    border-width: 6px 6px 0;
+    left: 0;
+    top: 1px;
+}
+.ui-poptip-arrow-5 span, .ui-poptip-arrow-6 span, .ui-poptip-arrow-7 span {
+    border-top-color: #FFFCEF;
+    border-width: 6px 6px 0;
+}
+.ui-poptip-arrow-5 {
+    bottom: 0;
+    right: 28px;
+}
+.ui-poptip-arrow-6 {
+    bottom: 0;
+    left: 50%;
+}
+.ui-poptip-arrow-7 {
+    bottom: 0;
+    left: 14px;
+}
+.ui-poptip-arrow-6 em, .ui-poptip-arrow-6 span {
+    left: -6px;
+}
+:root .ui-poptip-shadow {
+}
+.ui-poptip-blue {
+    color: #4D4D4D;
+}
+.ui-poptip-blue .ui-poptip-shadow {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.ui-poptip-blue .ui-poptip-container {
+    background-color: #F8FCFF;
+    border: 1px solid #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-10 em, .ui-poptip-blue .ui-poptip-arrow-9 em {
+    border-right-color: #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-11 em, .ui-poptip-blue .ui-poptip-arrow-12 em, .ui-poptip-blue .ui-poptip-arrow-1 em {
+    border-bottom-color: #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-2 em, .ui-poptip-blue .ui-poptip-arrow-3 em {
+    border-left-color: #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-5 em, .ui-poptip-blue .ui-poptip-arrow-6 em, .ui-poptip-blue .ui-poptip-arrow-7 em {
+    border-top-color: #B9C8D3;
+}
+.ui-poptip-blue .ui-poptip-arrow-10 span, .ui-poptip-blue .ui-poptip-arrow-9 span {
+    border-right-color: #F8FCFF;
+}
+.ui-poptip-blue .ui-poptip-arrow-11 span, .ui-poptip-blue .ui-poptip-arrow-12 span, .ui-poptip-blue .ui-poptip-arrow-1 span {
+    border-bottom-color: #F8FCFF;
+}
+.ui-poptip-blue .ui-poptip-arrow-2 span, .ui-poptip-blue .ui-poptip-arrow-3 span {
+    border-left-color: #F8FCFF;
+}
+.ui-poptip-blue .ui-poptip-arrow-5 span, .ui-poptip-blue .ui-poptip-arrow-6 span, .ui-poptip-blue .ui-poptip-arrow-7 span {
+    border-top-color: #F8FCFF;
+}
+.ui-poptip-white {
+    color: #333333;
+}
+.ui-poptip-white .ui-poptip-shadow {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.ui-poptip-white .ui-poptip-container {
+    background-color: #FFFFFF;
+    border: 1px solid #B1B1B1;
+}
+.ui-poptip-white .ui-poptip-arrow-10 em, .ui-poptip-white .ui-poptip-arrow-9 em {
+    border-right-color: #B1B1B1;
+}
+.ui-poptip-white .ui-poptip-arrow-11 em, .ui-poptip-white .ui-poptip-arrow-12 em, .ui-poptip-white .ui-poptip-arrow-1 em {
+    border-bottom-color: #B1B1B1;
+}
+.ui-poptip-white .ui-poptip-arrow-2 em, .ui-poptip-white .ui-poptip-arrow-3 em {
+    border-left-color: #B1B1B1;
+}
+.ui-poptip-white .ui-poptip-arrow-5 em, .ui-poptip-white .ui-poptip-arrow-6 em, .ui-poptip-white .ui-poptip-arrow-7 em {
+    border-top-color: #B1B1B1;
+}
+.ui-poptip-white .ui-poptip-arrow-10 span, .ui-poptip-white .ui-poptip-arrow-9 span {
+    border-right-color: #FFFFFF;
+}
+.ui-poptip-white .ui-poptip-arrow-11 span, .ui-poptip-white .ui-poptip-arrow-12 span, .ui-poptip-white .ui-poptip-arrow-1 span {
+    border-bottom-color: #FFFFFF;
+}
+.ui-poptip-white .ui-poptip-arrow-2 span, .ui-poptip-white .ui-poptip-arrow-3 span {
+    border-left-color: #FFFFFF;
+}
+.ui-poptip-white .ui-poptip-arrow-5 span, .ui-poptip-white .ui-poptip-arrow-6 span, .ui-poptip-white .ui-poptip-arrow-7 span {
+    border-top-color: #FFFFFF;
+}
+.ui-poptip {
+    top: 0;
+    left: 0;
+}
+
+
